@@ -1,0 +1,8 @@
+{
+  "name": "online-exam-system",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "echo build step",
+    "test": "echo test step"
+  }
+}
