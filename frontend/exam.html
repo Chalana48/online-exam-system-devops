@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Page - Online Exam System</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/exam.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📝 Online Exam</h1>
+            <div class="exam-info">
+                <div class="timer" id="timer">Time: 30:00</div>
+                <div class="question-counter">
+                    Question: <span id="currentQ">1</span>/<span id="totalQ">10</span>
+                </div>
+            </div>
+        </header>
+        
+        <main class="exam-main">
+            <!-- Question -->
+            <div class="question-box">
+                <h2 id="question">1. What is the primary goal of DevOps?</h2>
+            </div>
+            
+            <!-- Options -->
+            <div class="options-box">
+                <div class="option">
+                    <input type="radio" name="answer" id="optA">
+                    <label for="optA">A. To separate development and operations teams</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="answer" id="optB">
+                    <label for="optB">B. To automate and streamline software delivery</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="answer" id="optC">
+                    <label for="optC">C. To manage cloud infrastructure only</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="answer" id="optD">
+                    <label for="optD">D. To design user interfaces</label>
+                </div>
+            </div>
+            
+            <!-- Navigation -->
+            <div class="nav-buttons">
+                <button class="btn prev-btn" onclick="prevQuestion()">← Previous</button>
+                <button class="btn next-btn" onclick="nextQuestion()">Next →</button>
+                <button class="btn submit-btn" onclick="submitExam()">Submit Exam</button>
+            </div>
+            
+            <!-- Progress -->
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill" style="width: 10%"></div>
+                </div>
+                <div class="progress-text">Progress: <span id="progressText">10%</span></div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>© 2024 Online Exam System | Developed by Team Member 3</p>
+        </footer>
+    </div>
+    
+    <script src="scripts/exam.js"></script>
+</body>
+</html>
